@@ -1,10 +1,6 @@
 pipeline {
     agent any
-        stage("Adding Node") {
-          node("logreader") {
-             echo "Node added"
-    }
-}
+{ node { label 'logreader' } }
     stages {
         stage('Run file') { 
             steps {
