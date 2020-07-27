@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-{ node { label 'logreader' } }
+    agent {label 'logreader'}
     stages {
         stage('Run file') { 
             steps {
