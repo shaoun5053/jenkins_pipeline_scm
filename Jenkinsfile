@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    stage("Adding Node") {
-    node("logreader") {
-        echo "Node added"
+        stage("Adding Node") {
+          node("logreader") {
+             echo "Node added"
     }
 }
     stages {
