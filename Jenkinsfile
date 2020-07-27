@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run file') { 
             steps {
-                sh "sudo docker-compose up -d"
+                sh "docker-compose up -d"
             }
         }
         stage('Message') { 
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Status List') { 
             steps {
-                sh "sudo docker ps"
+                sh "docker ps"
             }
         }
     }
