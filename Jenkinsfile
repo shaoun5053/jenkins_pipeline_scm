@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Run file') { 
             steps {
-                sh "sudo chmod 777 docker-compose.yml"
                 sh "sudo docker-compose up -d"
             }
         }
